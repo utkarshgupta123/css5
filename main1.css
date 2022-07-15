@@ -1,0 +1,30 @@
+body{
+    background-color: yellow;
+    text-align: center;
+}
+.container{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    align-content: center;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(183, 157, 124);
+}
+.box{
+    transition: all 3s linear;
+}
+.box:hover{
+    width: 400px;
+}
+.box1{
+    transition: all 3s linear;
+}
+.box1:hover{
+    width: 400px;
+    height: 400px;
+}

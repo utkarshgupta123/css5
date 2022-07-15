@@ -1,0 +1,132 @@
+body{
+    background-image: url(./sky.jpg);
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    border-left: 10px solid orange;
+    border-right:10px solid green;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    background-size: cover;
+}
+.india{
+    display: flex;
+    flex-flow: row wap;
+    justify-content: space-between;
+    width: 400px;
+    height: 60px;
+    z-index: 10;
+    margin-left: 500px;
+}
+.one, .two, .three{
+    font-size: 40px;
+    padding: 0;
+    margin: 7px;
+}
+.one{
+    background-color: orange;
+}
+.two{
+    background-color: white;
+}
+.three{
+    background-color: green;
+}
+.sun{
+    height: 130px;
+    width: 130px;
+    right: 90px;
+    position: absolute;
+}
+
+
+
+
+
+
+.city{
+    position: absolute;
+    width: 100vw;
+    height: 300px;
+    top: 20vh;
+    background-image: url(./city.png);
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+    animation: city 20s linear infinite;
+}
+@keyframes city{
+  from{
+    background-position: 0 0;
+  }
+  to{
+    background-position: 100vw;
+  }
+}
+.road{
+    position: absolute;
+    width: 100vw;
+    height: 300px;
+    bottom: 0vh;
+    background-image: url(./road.jpg);
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+    animation: road1 10s linear infinite;
+}
+@keyframes road1 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100vw;
+    }
+}
+
+.car{
+    position: absolute;
+    width: 550px;
+    height: 280px;
+    left: 400px;
+    bottom: 8vw;
+}
+.wheel{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 21vh;
+    left: 450px;
+    animation: wheel1 1s linear infinite;
+}
+@keyframes wheel1{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.tyre{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom: 21vh;
+        left:785px;
+        animation: tyre1 1s linear infinite;
+}
+
+@keyframes tyre1{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.flag{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 835px;
+    bottom: 18vw;
+}
